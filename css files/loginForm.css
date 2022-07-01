@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+.register {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px gray;
+  overflow: hidden;
+}
+#animation {
+  position: absolute;
+  display: block;
+}
+.register .right {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 2s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.register .left {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.register .bottom {
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.register .top {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.register .title {
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 15px;
+  color: aqua;
+  box-shadow: rgb(112, 109, 109);
+}
+
+.register .login-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.register label {
+  display: inline-block;
+  padding-left: 10px;
+  transform: translateX(30%);
+  color: #fff;
+}
+
+.register .email,
+.register .password {
+  transform: translateX(-5%);
+}
+
+.register .new {
+  margin-top: 10px;
+  transform: translateX(10%);
+}
+
+input {
+  margin-bottom: 15px;
+  outline: none;
+  padding: 0.4rem;
+  background-color: black;
+  border: none;
+  color: #fff;
+  box-shadow: inset 2px 2px 2px 2px rgba(243, 236, 236, 0.3);
+  border-radius: 10px;
+  font-size: 15px;
+}
+input:focus {
+  box-shadow: 0 0 2px 2px rgb(56, 110, 72);
+}
+
+#hide {
+  display: none;
+}
+
+.register button {
+  border-style: none;
+  position: relative;
+  flex-direction: row;
+  width: 80px;
+  height: 30px;
+  margin: 10px 50px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.register button:hover {
+  box-shadow: 0 0 10px white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.register p {
+  color: #fff;
+  transform: translateX(29%);
+}

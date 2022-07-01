@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css files/form.css" />
+    <script
+      src="https://kit.fontawesome.com/abd2346953.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="register" >
+      <span id="animation" class="left"></span>
+      <span id="animation" class="right"></span>
+      <span id="animation" class="bottom"></span>
+      <span id="animation" class="top"></span>
+      
+      <form  onsubmit="return confirm()" >
+        <h2 class="signup-title title">Sign Up</h2>
+        <label 
+          >First Name: <br> <input id="fname" type="text" placeholder="enter your first name" required
+        /></label>
+        <br />
+        <label 
+          >Last Name <br><input id="lname" type="text" placeholder="enter your last name" required
+        /></label>
+
+        <br />
+        <label 
+          >Phone Number: <br>
+          <input id="number"
+            type="text"
+            placeholder="enter 10 digit number" required
+            pattern="[0-9]{10}"
+        /></label>
+        <br />
+        <label 
+          >Email: <br><input id="email" type="text" placeholder="enter your email" required
+        /></label>
+        <br />
+        <label 
+          >Enter password: <br>
+          <input
+            placeholder="enter password" maxlength="20" minlength="8"
+            type="password"
+            id="myInput" /><span class="icons" onclick="myFunction()">
+            <i id="hide1" class="fas fa-eye"></i>
+            <i id="hide2" class="fas fa-eye-slash"></i> </span
+        ></label>
+        <br />
+        <label 
+          >Confirm password: <br>
+          <input
+            placeholder="Confirm password" maxlength="20" minlength="8"
+            type="password"
+            id="cInput" /><span class="icons" onclick="newFunction()">
+            <i id="hide3" class="fas fa-eye"></i>
+            <i id="hide4" class="fas fa-eye-slash"></i> </span
+        ></label>
+        <br />
+        <a  ><button onclick="signup(); test()" class="submit-btn" type="submit">submit</button></a> 
+        <button  class="clear-btn" type="reset">clear</button>
+        <p>Already Signed Up? <a class="login-anchor" href="/html files/loginForm.html">Login</a></p>
+      </form>
+    </div>
+    <script defer src="/javascript files/form.js"></script>
+  </body>
+</html>
+ 

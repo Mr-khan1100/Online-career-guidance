@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "..\\..\\MyCodes"
+    },
+    {
+      "path": ".."
+    },
+    {
+      "path": "..\\..\\travel guide"
+    },
+    {
+      "path": "..\\..\\images"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "MyCodes"
+  }
+}

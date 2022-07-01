@@ -1,0 +1,16 @@
+/* Header **/
+header{
+    background-color: #6c5ce7;
+    padding: 15px;
+    font-size: 20px;
+    color: black;
+    border-bottom:indigo 6px solid;
+}
+body{
+    font: 15px/1.5 Arial, Poppins;
+    padding: 0px;
+    margin:0px;
+    background-color: white;
+}
+
+

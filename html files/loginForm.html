@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css files/loginForm.css">
+    <script
+      src="https://kit.fontawesome.com/abd2346953.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <div class="register" >
+        <span id="animation" class="left"></span>
+        <span id="animation" class="right"></span>
+        <span id="animation" class="bottom"></span>
+        <span id="animation" class="top"></span>
+        
+        
+  
+        <form class="login-form"> 
+          <h2 class="login-title title">Login</h2>
+          <label class="email">Email: <br> <input id="login-email" type="email" placeholder="enter email" required></label>
+          <br>
+          <label class="password">Password: <br> <input type="password" placeholder="enter password" required id="login-input" ><span class="icons" onclick="loginFunction()"><i id="show" class="fas fa-eye"></i>
+          <i id="hide" class="fas fa-eye-slash"></i></span></label>
+        <br />
+        <button type="submit" onclick="login()" class="login-btn">Login</button>
+          <p class="new">New Here? <a class class="signup-anchor" href="/html files/form.html">SignUp</class></a></p>
+        </form>
+      </div>
+      <script defer src="/javascript files/loginForm.js">  
+      </script>
+      <script src="/javascript files/webproject.js"></script>
+</body>
+</html>
